@@ -34,6 +34,7 @@
     function timeConvert (n) {
       const num = n;
       const rhours = Math.floor((num / 60))
+      const hours = (num / 60);
       const rminutes = Math.round((hours - rhours) * 60);
       return `Playlist total: ${rhours}:${rminutes}:${Math.round(sec > 60 ? sec / 60 : sec)}`
     }
